@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="app/src/main/res/drawable/dio-logo.png" width=200>
-  <h1> NEXA: CINEMATE </h1>
+  <img src="app/src/main/res/drawable/app_logo.png" width=400>
 </div>
 
 ## Tecnologias Utilizadas
