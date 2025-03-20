@@ -9,9 +9,16 @@
 
 Este projeto tem como objetivo criar um serviço de Streaming capaz de reproduzir filmes, séries e desenhos além de trazer as mídias mais recentes do mercado, de modo otimizado e em alta qualidade.
 
-<div align="center">
-  <img src="app/src/main/res/drawable/screenshot.png">
-</div>
+## Frameworks e Ferramentas
+
+- Interface: JetpackCompose & Material Design 3
+- Injeção de dependencias e Network: Koin, Ktor (HttpClient), FireBase (OAuth)
+- Arquitetura e Design Patnners: MVVM (Model View ViewModel)
+- Testes Unitários: MockK, Espresso, JUnit4
+
+## Imagens
+
+
 
 
 <h1 align="center">
