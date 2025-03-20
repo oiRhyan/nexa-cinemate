@@ -46,6 +46,9 @@ Para que a reprodução tenha sucesso utilizamos os IDS únicos da mídia fornec
 Para salvar mídias favoritas o usuário pode clicar no símbolo superior do canto direito, dessa forma ele irá salvar localmente um histório de filmes e séries favoritos os quais poderá retormar depois. Esta funcionalidade foi desenvolvida
 utilizando o Room Database e Coroutines
 
+<div align="center">
+  <img src="favoritos.gif" width=900>
+</div>
 
 
 <h1 align="center">
