@@ -15,6 +15,7 @@ Este projeto tem como objetivo criar um serviço de Streaming capaz de reproduzi
 - Injeção de dependencias e Network: Koin, Ktor (HttpClient), FireBase (OAuth)
 - Arquitetura e Design Patnners: MVVM (Model View ViewModel)
 - Testes Unitários: MockK, Espresso, JUnit4
+- Armazenamento local: Room
 
 ## Imagens
 
