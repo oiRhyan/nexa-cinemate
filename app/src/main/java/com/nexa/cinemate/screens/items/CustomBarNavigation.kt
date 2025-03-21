@@ -106,6 +106,8 @@ fun CustomBottomNavigation(navHostController: NavHostController) {
                 IconButton(onClick = {
                     if(icon.iconType == IconType.HOME_SMILE) {
                         navHostController.navigate("home")
+                    } else {
+                        navHostController.navigate("profile")
                     }
                 }) {
                     Icon(

@@ -187,7 +187,10 @@ fun MediaDetailsScreen(
                         }
                         IconButton(
                             onClick = {
-                                navHostController!!.navigate("video")
+                                navHostController!!.navigate("video") {
+                                    launchSingleTop = true
+                                    restoreState = true
+                                }
                             },
                             colors = IconButtonDefaults.iconButtonColors(
                                 containerColor = Color(0xFF626060).copy(alpha = 0.5f)
@@ -238,10 +241,12 @@ fun MediaDetailsScreen(
                                     "${
                                         if(movie?.release_date?.isNotEmpty() == true) "Filme" else "Série"
                                     } |  ${
-                                        if(details.isNotEmpty()) {
-                                            details[0].name + ", " + details[1].name
+                                        if (details.size > 1) {
+                                            "${details[0].name}, ${details[1].name}"
+                                        } else if (details.isNotEmpty()) {
+                                            details[0].name
                                         } else {
-                                            ""
+                                            "N/A"
                                         }
                                     } | $releaseDate",
                                     fontWeight = FontWeight.Bold,

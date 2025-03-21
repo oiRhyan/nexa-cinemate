@@ -1,17 +1,22 @@
 package com.nexa.cinemate.screens.ui.views.home
 
+import android.content.Context
+import android.content.Intent
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.nexa.cinemate.data.database.services.firebase.GoogleAuthClient
 import com.nexa.cinemate.data.models.response.Movie
 import com.nexa.cinemate.data.models.response.MovieResponse
 import com.nexa.cinemate.data.models.response.details.Genre
 import com.nexa.cinemate.data.models.response.image.Backdrop
 import com.nexa.cinemate.data.repositories.MovieRepository
 import com.nexa.cinemate.data.utils.toMovie
+import com.nexa.cinemate.screens.ui.views.login.LoginUIState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 class HomeViewModel(

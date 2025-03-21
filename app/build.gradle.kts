@@ -1,11 +1,15 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("kotlin-parcelize")
-    id("org.jetbrains.kotlin.plugin.serialization") version "2.0.0"
+    id("org.jetbrains.kotlin.plugin.serialization") version "2.1.0"
     id("com.google.devtools.ksp")
     id("androidx.room") version "2.6.1" apply false
+    alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
@@ -55,10 +59,17 @@ android {
 dependencies {
     implementation(libs.ktor.client.android)
     implementation(libs.ktor.client.json.jvm)
+    implementation(libs.androidx.activity.ktx)
+    implementation(libs.androidx.appcompat)
     implementation(libs.ktor.client.logging)
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization.kotlinx.json)
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.googleid)
     ksp(libs.androidx.room.compiler)
+    implementation(libs.firebase.auth)
+    implementation(libs.play.services.auth)
     implementation(libs.glide)
     implementation(libs.accompanist.pager)
     implementation(libs.compose)

@@ -8,9 +8,6 @@
       <SelectionState runConfigName="recomendedItensOnScreen()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="getAnimesFromViewModelTest()">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="MidiaDetailsScreenKtTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>

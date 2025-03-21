@@ -30,8 +30,6 @@ fun VideoScreen(
 
     val movie = viewModel.selectedMovie
 
-    val context = LocalContext.current
-
     LockScreenOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
     HideSystemBars()
 
@@ -81,9 +79,9 @@ fun VideoScreen(
 
 
                     if(movie?.title == "") {
-                        loadUrl("")
+                        loadUrl("https://superflixapi.ps/serie/${movie?.id}")
                     } else {
-                        loadUrl("")
+                        loadUrl("https://superflixapi.ps/filme/${movie?.id}")
                     }
 
                 }

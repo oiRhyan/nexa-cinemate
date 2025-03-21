@@ -1,5 +1,6 @@
 package com.nexa.cinemate.screens.ui.views.movie
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -43,6 +44,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -51,6 +54,7 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.nexa.cinemate.R
 import com.nexa.cinemate.data.models.response.Movie
 import com.nexa.cinemate.screens.items.CategorySelector
 import com.nexa.cinemate.screens.items.FilmCard
@@ -154,17 +158,12 @@ fun MovieScreen(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    Text(
-                        "welcome back",
-                        textDecoration = TextDecoration.None,
-                        color = Color(0xFF626060)
-                    )
-                    Spacer(modifier = Modifier.height(5.dp))
-                    Text(
-                        "Admin 01",
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 20.sp,
-                        color = Color.White
+                    Spacer(modifier = Modifier.height(20.dp))
+                    Image(
+                        painter = painterResource(R.drawable.app_logo),
+                        contentScale = ContentScale.Crop,
+                        modifier = Modifier.height(30.dp).width(150.dp),
+                        contentDescription = "App Title",
                     )
                 }
                 Spacer(modifier = Modifier.width(10.dp))
