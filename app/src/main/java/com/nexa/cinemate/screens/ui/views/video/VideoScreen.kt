@@ -79,9 +79,9 @@ fun VideoScreen(
 
 
                     if(movie?.title == "") {
-                        loadUrl("https://superflixapi.ps/serie/${movie?.id}")
+                        loadUrl()
                     } else {
-                        loadUrl("https://superflixapi.ps/filme/${movie?.id}")
+                        loadUrl()
                     }
 
                 }
